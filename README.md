@@ -29,13 +29,20 @@ $ cd docker_geo_womeat
 - Run the container and access into it
 
 ```
-docker run -it -v $(pwd)/app:/app -p 8888:8888 ecme820721/womeat:latest bash
+$ docker run -it -v $(pwd)/app:/app -p 8888:8888 ecme820721/womeat:latest bash
 ```
 
-- Run notebook and the the url and token to access to Jupyter
+- Start Jupyter in background
 
 ```
 $ nohup jupyter notebook --port=8888 --no-browser --ip=0.0.0.0 --allow-root > notebook.log &
+[1] 8
+# nohup: ignoring input and redirecting stderr to stdout
+```
+
+- Hit enter and run the following command to get the URL and token
+
+```
 $ cat notebook.log | grep "127.0.0.1"
 http://127.0.0.1:8888/?token=ea0245bce953c7dfe9e35dxxxxxxxxxe27f614ca638023
 ```
