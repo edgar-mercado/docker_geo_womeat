@@ -51,3 +51,11 @@ http://127.0.0.1:8888/?token=ea0245bce953c7dfe9e35dxxxxxxxxxe27f614ca638023
 ![](img/screenshot.png)
 
 ![](img/screenshot2.png)
+
+- Test the installation
+
+```
+$ cd geopandas-tutorial/
+# python3 check_environment.py
+All good. Enjoy the tutorial!
+```
